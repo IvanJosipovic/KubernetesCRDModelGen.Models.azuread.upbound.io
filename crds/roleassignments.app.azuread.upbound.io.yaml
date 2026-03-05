@@ -7,11 +7,11 @@ metadata:
 spec:
   group: app.azuread.upbound.io
   names:
+    kind: RoleAssignment
     categories:
     - crossplane
     - managed
     - azuread
-    kind: RoleAssignment
     listKind: RoleAssignmentList
     plural: roleassignments
     singular: roleassignment

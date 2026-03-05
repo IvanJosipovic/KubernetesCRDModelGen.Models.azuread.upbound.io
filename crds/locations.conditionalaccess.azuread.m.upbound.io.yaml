@@ -7,11 +7,11 @@ metadata:
 spec:
   group: conditionalaccess.azuread.m.upbound.io
   names:
+    kind: Location
     categories:
     - crossplane
     - managed
     - azuread
-    kind: Location
     listKind: LocationList
     plural: locations
     singular: location

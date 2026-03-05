@@ -7,11 +7,11 @@ metadata:
 spec:
   group: applications.azuread.m.upbound.io
   names:
+    kind: Application
     categories:
     - crossplane
     - managed
     - azuread
-    kind: Application
     listKind: ApplicationList
     plural: applications
     singular: application

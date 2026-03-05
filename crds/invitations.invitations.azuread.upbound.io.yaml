@@ -7,11 +7,11 @@ metadata:
 spec:
   group: invitations.azuread.upbound.io
   names:
+    kind: Invitation
     categories:
     - crossplane
     - managed
     - azuread
-    kind: Invitation
     listKind: InvitationList
     plural: invitations
     singular: invitation

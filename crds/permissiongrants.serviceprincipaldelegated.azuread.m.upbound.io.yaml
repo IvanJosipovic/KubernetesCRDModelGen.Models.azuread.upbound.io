@@ -7,11 +7,11 @@ metadata:
 spec:
   group: serviceprincipaldelegated.azuread.m.upbound.io
   names:
+    kind: PermissionGrant
     categories:
     - crossplane
     - managed
     - azuread
-    kind: PermissionGrant
     listKind: PermissionGrantList
     plural: permissiongrants
     singular: permissiongrant

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: policies.azuread.m.upbound.io
   names:
+    kind: GroupRoleManagementPolicy
     categories:
     - crossplane
     - managed
     - azuread
-    kind: GroupRoleManagementPolicy
     listKind: GroupRoleManagementPolicyList
     plural: grouprolemanagementpolicies
     singular: grouprolemanagementpolicy

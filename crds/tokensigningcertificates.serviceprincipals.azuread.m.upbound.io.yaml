@@ -7,11 +7,11 @@ metadata:
 spec:
   group: serviceprincipals.azuread.m.upbound.io
   names:
+    kind: TokenSigningCertificate
     categories:
     - crossplane
     - managed
     - azuread
-    kind: TokenSigningCertificate
     listKind: TokenSigningCertificateList
     plural: tokensigningcertificates
     singular: tokensigningcertificate

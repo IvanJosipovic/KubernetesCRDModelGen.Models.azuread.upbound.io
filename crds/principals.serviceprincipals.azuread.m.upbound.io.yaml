@@ -7,11 +7,11 @@ metadata:
 spec:
   group: serviceprincipals.azuread.m.upbound.io
   names:
+    kind: Principal
     categories:
     - crossplane
     - managed
     - azuread
-    kind: Principal
     listKind: PrincipalList
     plural: principals
     singular: principal

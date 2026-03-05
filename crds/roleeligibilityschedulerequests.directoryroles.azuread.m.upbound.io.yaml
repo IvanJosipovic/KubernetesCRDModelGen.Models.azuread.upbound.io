@@ -7,11 +7,11 @@ metadata:
 spec:
   group: directoryroles.azuread.m.upbound.io
   names:
+    kind: RoleEligibilityScheduleRequest
     categories:
     - crossplane
     - managed
     - azuread
-    kind: RoleEligibilityScheduleRequest
     listKind: RoleEligibilityScheduleRequestList
     plural: roleeligibilityschedulerequests
     singular: roleeligibilityschedulerequest

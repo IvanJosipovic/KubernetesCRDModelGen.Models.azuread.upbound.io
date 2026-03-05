@@ -7,11 +7,11 @@ metadata:
 spec:
   group: synchronization.azuread.upbound.io
   names:
+    kind: Job
     categories:
     - crossplane
     - managed
     - azuread
-    kind: Job
     listKind: JobList
     plural: jobs
     singular: job

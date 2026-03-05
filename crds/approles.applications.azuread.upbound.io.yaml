@@ -7,11 +7,11 @@ metadata:
 spec:
   group: applications.azuread.upbound.io
   names:
+    kind: AppRole
     categories:
     - crossplane
     - managed
     - azuread
-    kind: AppRole
     listKind: AppRoleList
     plural: approles
     singular: approle

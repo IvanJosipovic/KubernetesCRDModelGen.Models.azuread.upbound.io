@@ -7,11 +7,11 @@ metadata:
 spec:
   group: identitygovernance.azuread.m.upbound.io
   names:
+    kind: PrivilegedAccessGroupEligibilitySchedule
     categories:
     - crossplane
     - managed
     - azuread
-    kind: PrivilegedAccessGroupEligibilitySchedule
     listKind: PrivilegedAccessGroupEligibilityScheduleList
     plural: privilegedaccessgroupeligibilityschedules
     singular: privilegedaccessgroupeligibilityschedule
