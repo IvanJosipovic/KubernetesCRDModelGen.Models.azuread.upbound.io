@@ -7,11 +7,11 @@ metadata:
 spec:
   group: users.azuread.m.upbound.io
   names:
+    kind: User
     categories:
     - crossplane
     - managed
     - azuread
-    kind: User
     listKind: UserList
     plural: users
     singular: user

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: policies.azuread.m.upbound.io
   names:
+    kind: ClaimsMappingPolicy
     categories:
     - crossplane
     - managed
     - azuread
-    kind: ClaimsMappingPolicy
     listKind: ClaimsMappingPolicyList
     plural: claimsmappingpolicies
     singular: claimsmappingpolicy

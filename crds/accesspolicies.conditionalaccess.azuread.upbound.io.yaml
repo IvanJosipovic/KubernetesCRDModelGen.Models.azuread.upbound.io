@@ -7,11 +7,11 @@ metadata:
 spec:
   group: conditionalaccess.azuread.upbound.io
   names:
+    kind: AccessPolicy
     categories:
     - crossplane
     - managed
     - azuread
-    kind: AccessPolicy
     listKind: AccessPolicyList
     plural: accesspolicies
     singular: accesspolicy

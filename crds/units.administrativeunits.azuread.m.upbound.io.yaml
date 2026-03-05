@@ -7,11 +7,11 @@ metadata:
 spec:
   group: administrativeunits.azuread.m.upbound.io
   names:
+    kind: Unit
     categories:
     - crossplane
     - managed
     - azuread
-    kind: Unit
     listKind: UnitList
     plural: units
     singular: unit

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: directoryroles.azuread.m.upbound.io
   names:
+    kind: CustomDirectoryRole
     categories:
     - crossplane
     - managed
     - azuread
-    kind: CustomDirectoryRole
     listKind: CustomDirectoryRoleList
     plural: customdirectoryroles
     singular: customdirectoryrole

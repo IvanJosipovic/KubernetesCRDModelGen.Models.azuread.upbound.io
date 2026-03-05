@@ -7,11 +7,11 @@ metadata:
 spec:
   group: applications.azuread.m.upbound.io
   names:
+    kind: PreAuthorized
     categories:
     - crossplane
     - managed
     - azuread
-    kind: PreAuthorized
     listKind: PreAuthorizedList
     plural: preauthorizeds
     singular: preauthorized
