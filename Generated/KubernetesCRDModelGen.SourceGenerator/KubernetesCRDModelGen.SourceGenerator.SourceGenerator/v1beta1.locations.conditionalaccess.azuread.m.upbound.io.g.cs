@@ -304,6 +304,13 @@ public partial class V1beta1LocationStatusAtProvider
     /// <summary>An ip block as documented below, which configures an IP-based named location.</summary>
     [JsonPropertyName("ip")]
     public V1beta1LocationStatusAtProviderIp? Ip { get; set; }
+
+    /// <summary>
+    /// The object ID of the named location.
+    /// The object ID of the named location
+    /// </summary>
+    [JsonPropertyName("objectId")]
+    public string? ObjectId { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

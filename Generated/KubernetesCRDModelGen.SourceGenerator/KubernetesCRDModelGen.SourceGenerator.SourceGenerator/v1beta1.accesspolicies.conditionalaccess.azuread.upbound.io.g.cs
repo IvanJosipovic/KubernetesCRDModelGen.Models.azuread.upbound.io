@@ -81,11 +81,29 @@ public partial class V1beta1AccessPolicySpecForProviderConditionsApplications
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
+public partial class V1beta1AccessPolicySpecForProviderConditionsClientApplicationsFilter
+{
+    /// <summary>Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>Condition filter to match items.</summary>
+    [JsonPropertyName("rule")]
+    public string? Rule { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
 public partial class V1beta1AccessPolicySpecForProviderConditionsClientApplications
 {
     /// <summary>A list of service principal IDs explicitly excluded in the policy.</summary>
     [JsonPropertyName("excludedServicePrincipals")]
     public IList<string>? ExcludedServicePrincipals { get; set; }
+
+    /// <summary>A filter block as documented below.</summary>
+    [JsonPropertyName("filter")]
+    public IList<V1beta1AccessPolicySpecForProviderConditionsClientApplicationsFilter>? Filter { get; set; }
 
     /// <summary>A list of service principal IDs explicitly included in the policy. Can be set to ServicePrincipalsInMyTenant to include all service principals. This is mandatory value when at least one excluded_service_principals is set.</summary>
     [JsonPropertyName("includedServicePrincipals")]
@@ -97,11 +115,11 @@ public partial class V1beta1AccessPolicySpecForProviderConditionsClientApplicati
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
 public partial class V1beta1AccessPolicySpecForProviderConditionsDevicesFilter
 {
-    /// <summary>Whether to include in, or exclude from, matching devices from the policy. Supported values are include or exclude.</summary>
+    /// <summary>Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>Condition filter to match devices. For more information, see official documentation.</summary>
+    /// <summary>Condition filter to match items.</summary>
     [JsonPropertyName("rule")]
     public string? Rule { get; set; }
 }
@@ -246,6 +264,10 @@ public partial class V1beta1AccessPolicySpecForProviderConditions
     /// <summary>An applications block as documented below, which specifies applications and user actions included in and excluded from the policy.</summary>
     [JsonPropertyName("applications")]
     public IList<V1beta1AccessPolicySpecForProviderConditionsApplications>? Applications { get; set; }
+
+    /// <summary>A list of authentication flow transfer methods included in the policy. Possible values are: authenticationTransfer and deviceCodeFlow.</summary>
+    [JsonPropertyName("authenticationFlowTransferMethods")]
+    public IList<string>? AuthenticationFlowTransferMethods { get; set; }
 
     /// <summary>A list of client application types included in the policy. Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported and other.</summary>
     [JsonPropertyName("clientAppTypes")]
@@ -399,11 +421,29 @@ public partial class V1beta1AccessPolicySpecInitProviderConditionsApplications
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
+public partial class V1beta1AccessPolicySpecInitProviderConditionsClientApplicationsFilter
+{
+    /// <summary>Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>Condition filter to match items.</summary>
+    [JsonPropertyName("rule")]
+    public string? Rule { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
 public partial class V1beta1AccessPolicySpecInitProviderConditionsClientApplications
 {
     /// <summary>A list of service principal IDs explicitly excluded in the policy.</summary>
     [JsonPropertyName("excludedServicePrincipals")]
     public IList<string>? ExcludedServicePrincipals { get; set; }
+
+    /// <summary>A filter block as documented below.</summary>
+    [JsonPropertyName("filter")]
+    public IList<V1beta1AccessPolicySpecInitProviderConditionsClientApplicationsFilter>? Filter { get; set; }
 
     /// <summary>A list of service principal IDs explicitly included in the policy. Can be set to ServicePrincipalsInMyTenant to include all service principals. This is mandatory value when at least one excluded_service_principals is set.</summary>
     [JsonPropertyName("includedServicePrincipals")]
@@ -415,11 +455,11 @@ public partial class V1beta1AccessPolicySpecInitProviderConditionsClientApplicat
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
 public partial class V1beta1AccessPolicySpecInitProviderConditionsDevicesFilter
 {
-    /// <summary>Whether to include in, or exclude from, matching devices from the policy. Supported values are include or exclude.</summary>
+    /// <summary>Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>Condition filter to match devices. For more information, see official documentation.</summary>
+    /// <summary>Condition filter to match items.</summary>
     [JsonPropertyName("rule")]
     public string? Rule { get; set; }
 }
@@ -564,6 +604,10 @@ public partial class V1beta1AccessPolicySpecInitProviderConditions
     /// <summary>An applications block as documented below, which specifies applications and user actions included in and excluded from the policy.</summary>
     [JsonPropertyName("applications")]
     public IList<V1beta1AccessPolicySpecInitProviderConditionsApplications>? Applications { get; set; }
+
+    /// <summary>A list of authentication flow transfer methods included in the policy. Possible values are: authenticationTransfer and deviceCodeFlow.</summary>
+    [JsonPropertyName("authenticationFlowTransferMethods")]
+    public IList<string>? AuthenticationFlowTransferMethods { get; set; }
 
     /// <summary>A list of client application types included in the policy. Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported and other.</summary>
     [JsonPropertyName("clientAppTypes")]
@@ -919,11 +963,29 @@ public partial class V1beta1AccessPolicyStatusAtProviderConditionsApplications
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
+public partial class V1beta1AccessPolicyStatusAtProviderConditionsClientApplicationsFilter
+{
+    /// <summary>Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+
+    /// <summary>Condition filter to match items.</summary>
+    [JsonPropertyName("rule")]
+    public string? Rule { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
 public partial class V1beta1AccessPolicyStatusAtProviderConditionsClientApplications
 {
     /// <summary>A list of service principal IDs explicitly excluded in the policy.</summary>
     [JsonPropertyName("excludedServicePrincipals")]
     public IList<string>? ExcludedServicePrincipals { get; set; }
+
+    /// <summary>A filter block as documented below.</summary>
+    [JsonPropertyName("filter")]
+    public IList<V1beta1AccessPolicyStatusAtProviderConditionsClientApplicationsFilter>? Filter { get; set; }
 
     /// <summary>A list of service principal IDs explicitly included in the policy. Can be set to ServicePrincipalsInMyTenant to include all service principals. This is mandatory value when at least one excluded_service_principals is set.</summary>
     [JsonPropertyName("includedServicePrincipals")]
@@ -935,11 +997,11 @@ public partial class V1beta1AccessPolicyStatusAtProviderConditionsClientApplicat
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.3.0.")]
 public partial class V1beta1AccessPolicyStatusAtProviderConditionsDevicesFilter
 {
-    /// <summary>Whether to include in, or exclude from, matching devices from the policy. Supported values are include or exclude.</summary>
+    /// <summary>Whether to include in, or exclude from, matching items from the policy. Supported values are include or exclude.</summary>
     [JsonPropertyName("mode")]
     public string? Mode { get; set; }
 
-    /// <summary>Condition filter to match devices. For more information, see official documentation.</summary>
+    /// <summary>Condition filter to match items.</summary>
     [JsonPropertyName("rule")]
     public string? Rule { get; set; }
 }
@@ -1084,6 +1146,10 @@ public partial class V1beta1AccessPolicyStatusAtProviderConditions
     /// <summary>An applications block as documented below, which specifies applications and user actions included in and excluded from the policy.</summary>
     [JsonPropertyName("applications")]
     public IList<V1beta1AccessPolicyStatusAtProviderConditionsApplications>? Applications { get; set; }
+
+    /// <summary>A list of authentication flow transfer methods included in the policy. Possible values are: authenticationTransfer and deviceCodeFlow.</summary>
+    [JsonPropertyName("authenticationFlowTransferMethods")]
+    public IList<string>? AuthenticationFlowTransferMethods { get; set; }
 
     /// <summary>A list of client application types included in the policy. Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported and other.</summary>
     [JsonPropertyName("clientAppTypes")]
