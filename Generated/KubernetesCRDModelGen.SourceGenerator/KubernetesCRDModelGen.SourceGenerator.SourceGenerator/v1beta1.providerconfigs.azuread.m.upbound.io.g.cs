@@ -139,6 +139,42 @@ public partial class V1beta1ProviderConfigSpecCredentials
     public required V1beta1ProviderConfigSpecCredentialsSourceEnum Source { get; set; }
 }
 
+/// <summary>
+/// ExponentialFailureRateLimiter, when set, overrides the parameters of the
+/// exponential failure rate limiter used to schedule retries for the
+/// managed resource that this policy applies to.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ProviderConfigSpecReconciliationPolicyExponentialFailureRateLimiter
+{
+    /// <summary>BaseDelay is the initial delay between retries.</summary>
+    [JsonPropertyName("baseDelay")]
+    public string? BaseDelay { get; set; }
+
+    /// <summary>MaxDelay is the maximum delay between retries.</summary>
+    [JsonPropertyName("maxDelay")]
+    public string? MaxDelay { get; set; }
+}
+
+/// <summary>
+/// ReconciliationPolicy configures how a managed resource is reconciled.
+/// It currently allows overriding the controller&apos;s failure rate limiter
+/// parameters on a per-resource basis via ExponentialFailureRateLimiter.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ProviderConfigSpecReconciliationPolicy
+{
+    /// <summary>
+    /// ExponentialFailureRateLimiter, when set, overrides the parameters of the
+    /// exponential failure rate limiter used to schedule retries for the
+    /// managed resource that this policy applies to.
+    /// </summary>
+    [JsonPropertyName("exponentialFailureRateLimiter")]
+    public V1beta1ProviderConfigSpecReconciliationPolicyExponentialFailureRateLimiter? ExponentialFailureRateLimiter { get; set; }
+}
+
 /// <summary>A ProviderConfigSpec defines the desired state of a ProviderConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -178,6 +214,14 @@ public partial class V1beta1ProviderConfigSpec
     /// </summary>
     [JsonPropertyName("oidcTokenFilePath")]
     public string? OidcTokenFilePath { get; set; }
+
+    /// <summary>
+    /// ReconciliationPolicy configures how a managed resource is reconciled.
+    /// It currently allows overriding the controller&apos;s failure rate limiter
+    /// parameters on a per-resource basis via ExponentialFailureRateLimiter.
+    /// </summary>
+    [JsonPropertyName("reconciliationPolicy")]
+    public V1beta1ProviderConfigSpecReconciliationPolicy? ReconciliationPolicy { get; set; }
 
     /// <summary>
     /// TenantID is the Azure AD tenant ID to be used.
